@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script><!-- Enlace de la librería ScrollReveal --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <title>☻ Momdayclub ☻</title>
+</head>
+<body>
+<div id="top"></div>
+    <div class="contenedor">
+
+            <div class="container">
+            <div class="redes">
+            <ul>
+                <li><a href="https://momday.club/" target="_blank"><img src="img/correo.png" width="40px" alt=""/></a></li>
+                <li><a href="https://www.instagram.com/momdayclub/" target="_blank"><img src="img/instagram.png" width="40px" alt=""/></a></li>
+                <li><a href="https://wa.me/34618805074" target="_blank"><img src="img/whatsapp.png" width="40px" alt=""/></a></li>
+            </ul>
+            </div>
+        </div>
+
+        <header class="header">
+            <div class="logo">
+            <a href="#top"> 
+            <img src="img/logo.PNG" alt="logo">
+            </a>
+            </div>
+        
+            <nav class="navbar">
+                <a href="#estudio">Estudio</a>
+                <a href="#cita">¿Tattoo?</a> 
+                <a href="#artistas">Artistas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        
+        </header>
+
+        <section class="machine" id="machine">
+            <canvas id="marcadorCanvas"></canvas>
+
+            <a href="#welcome">No es por presumir, pero... &#8595;</a>
+
+        </section>
+
+        <section class="welcome" id="welcome">
+            <h1>Creo que ha quedado claro que a nosotros se nos da mejor. <br>¿No crees?</h1>
+          
+        </section>
+
+        <section class="estudio" id="estudio"> <br>
+            <center> <div class="textos">
+            <h1>Momday Club</h1>
+            <h2>Let's have a Gooday!</h2> <br>
+
+            <div class="parrafo">
+                <p>Bienvenidos a Momday Club, un estudio de tatuajes en Las Palmas de Gran Canaria donde el arte, 
+                    la creatividad y la experiencia se unen. Más que un estudio, somos un espacio para quienes 
+                    buscan expresarse a través del tatuaje. <br> <br>
+
+                    Trabajamos con artistas reconocidos internacionalmente y ofrecemos un trato personalizado para 
+                    que cada diseño refleje tu historia y estilo. Nuestro entorno es seguro, cómodo y acogedor, 
+                    con altos estándares de higiene y respeto. <br> <br>
+                    
+                    En Momday Club no solo te tatuas: formas parte de una comunidad artística. Si buscas calidad, 
+                    exclusividad y autenticidad, este es tu lugar.</p>
+            </div>
+        </div> </center>
+        </section>
+
+        <section class="cita" id="cita"> <br>
+        <center>  
+            <div class="textos momday" >
+            <h1>¿Tu próximo tattoo?</h1></div>
+        </center>
+            <form class="form-container1" onsubmit="enviarFormulario(event)">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="off">
+            
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required autocomplete="off">
+                <br> <br>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número" required autocomplete="off"> 
+
+                <label for="fecha">Fecha deseada</label>
+                <input type="date" id="fecha" name="fecha" required> <br> <br>
+             <br>
+                <label for="estilo">Estilo de tatuaje</label>
+                <select id="estilo" class="opciones" name="estilo" required>
+                  <option value="">Elige una opción</option>
+                  <option value="Realismo">Realismo</option>
+                  <option value="Tradicional">Tradicional</option>
+                  <option value="Geométrico">Geométrico</option>
+                  <option value="Acuarela">Acuarela</option>
+                  <option value="Minimalista">Minimalista</option>
+                </select> <br> <br>
+            
+                <label>Tamaño aproximado</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="tamano" value="Pequeño" required> Pequeño</label>
+                  <label><input type="radio" name="tamano" value="Mediano"> Mediano</label>
+                  <label><input type="radio" name="tamano" value="Grande"> Grande</label>
+                </div>
+            
+                <label for="comentarios">Comentarios</label> <br>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Dinos qué te gustaría tatuarte..."></textarea>
+                <br> <br>  
+
+                <div class="custom-file-upload"> 
+                <label for="imagen">Imagen de referencia</label>
+                <label class="upload-btn" for="imagen">Seleccionar archivo</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+                <span id="nombre-archivo">Ningún archivo seleccionado</span>
+                </div>
+
+
+                <center>
+                <button type="submit">Solicitar Cita</button></center>
+              </form>
+
+        </section>
+
+        
+        <section class="artistas" id="artistas">
+            <center> 
+            <div class="textos momday" >
+                <h1>El talento en Momday</h1>
+                <h2>Una mezcla perfecta de estilos.</h2> <br>
+                <div class="parrafo">
+                    <p>Ya nos lo decía Mom: estamos obsesionados con los tatus y los dibujitos. 
+                        Nuestros artistas residentes dominan una variedad de estilos, desde realismo 
+                        hasta arte abstracto. 
+
+                        Trabajamos contigo para crear tatuajes personalizados que realmente cuentan tu historia.<br> <br>
+
+                        Nos encanta recibir a los mejores artistas invitados de todo el mundo. 
+                        Nos traen ideas y técnicas frescas, ofreciendo algo único sin tener 
+                        que irse fuera. Mantente atento a nuestras actualizaciones en Instagram 
+                        para no perderte la oportunidad de tatuarte con los mejores. <br> <br>
+                        
+                        Por suerte hemos tenido el placer de trabajar con muchos artistas invitados increíbles, 
+                        y su influencia sigue viva en nuestro estudio. Nos encanta la diversidad de estilos y 
+                        creatividad que cada uno aporta.
+
+                        Si buscas un lugar para tu próximo tattoo que haremos realmente único, pide tu cita. <br> <br> 
+                        Momday Gooday!</p>
+                </div>
+            </div></center>
+        </section>
+        <section class="artistas">
+            <div class="cards-container">
+          
+                <div class="card">
+
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/coco.tristana/" data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Coco Tristana</h3>
+                    <p>Tatuadora en Las Palmas, destaca por su estilo surrealista y black, tatuajes detallados y únicos.</p>
+                    <p class="handle">@coco.tristana</p>
+
+                </div>
+               
+                  
+              
+                <div class="card">
+
+                  <blockquote class="instagram-media" 
+                  data-instgrm-permalink="https://www.instagram.com/toycromado/"data-instgrm-version="14">
+                  </blockquote>
+                  <h3>Toy Cromado</h3>
+                  <p>Es un tatuador en Las Palmas, reconocido por su estilo moderno, tribal y vibrante.</p>
+                  <p class="handle">@toycromado</p>
+
+                </div>
+              
+                <div class="card">
+
+                  <blockquote class="instagram-media" 
+                  data-instgrm-permalink="https://www.instagram.com/minidotstattoo/"data-instgrm-version="14">
+                  </blockquote>
+                  <h3>Minidotstattoo</h3>
+                  <p>Flash tattoos en Gran Canaria. El mejor tatuaje fino en Las Palmas, diseños únicos de línea fina.</p>
+                  <p class="handle">@minidotstattoo</p>
+
+                </div>
+              
+                <div class="card">
+
+                  <blockquote class="instagram-media" 
+                  data-instgrm-permalink="https://www.instagram.com/nemalex"data-instgrm-version="14">
+                  </blockquote>
+                  <h3>Nemalex</h3>
+                  <p>Tatuajes geométricos y tribales. Con un diseño único, su tatuaje de puntillismo es increíble.</p>
+                  <p class="handle">@nemalex</p>
+
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/tipicotattoo/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Tipicotattoo</h3>
+                    <p>Destacada por su estilo blackwork con toques modernos, tatuajes increibles con un diseño único.</p>
+                    <p class="handle">@tipicotattoo</p>
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/jun_tatt/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Jun_tatt</h3>
+                    <p>Reconocido por su estilo único que combina elementos en tatuajes realistas anime de forma increible.</p>
+                    <p class="handle">@jun_tatt</p>
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/mister_dot_tattoo/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Mister Dot</h3>
+                    <p>Tatuador en Las Palmas, experto en dotwork, tatuajes detallados con un estilo limpio preciso.</p>
+                    <p class="handle">@mister_dot_tattoo</p>
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/didixtatt/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>DidixTatt</h3>
+                    <p>Es tatuadora en Las Palmas, tatuajes neotribal y estética kawaii, máximo estilo y detalle delicado.</p>
+                    <p class="handle">@didixtat</p>
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/mequetrefe777/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Mequetrefe</h3>
+                    <p>Es tatuador en Las Palmas, especializado en tatuajes tradicionales con detalles únicos y coloridos.</p>
+                    <p class="handle">@mequetrefe777</p>
+                </div>
+
+                <div class="card">
+
+                    <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/titisatori/"data-instgrm-version="14">
+                    </blockquote>
+                    <h3>Titisatori</h3>
+                    <p>Tatuajes finos y delicados en Las Palmas, diseños únicos especializados en finline y sketch.</p>
+                    <p class="handle">@titisatori</p>
+                </div>
+              </div>
+              
+
+        </section>
+
+        <section class="contacto" id="contacto"> <br>
+            <center> 
+                
+            <div class="textos">
+            <h1>Contacta</h1>
+                <div class="parrafo">
+                    <p>Si tienes cualquier consulta o quieres ser Guest en nuestro estudio, 
+                        no dudes en ponerte en contacto con nosotros. Nos aseguraremos de que 
+                        tu experiencia en Momday Club sea la mejor posible.</p> <br> <br>
+                </div>
+                <h3>Horario: Momday Club LPGC abierto de Lunes a viernes de 11:00 a 19:00h</h3>
+            </div></center>
+        
+            <div class="cards-container">
+          
+                <div class="card">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1468.5957873052932!2d-15.418666!3d28.112031000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4095b1e8409db9%3A0xfb5608bbb27beeef!2sMOMDAY%20CLUB%20TATTOO%20-%20Estudio%20de%20tatuajes%20Las%20Palmas!5e1!3m2!1ses!2sus!4v1746569760249!5m2!1ses!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>    
+              
+
+                <div class="card">
+                    <form class="form-container" onsubmit="enviarFormulario(event)">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required autocomplete="off">
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tuemail@correo.com" required autocomplete="off">
+                    
+                        <label for="contacto">Contacto por...</label>
+                        <select id="contacto" name="contacto" required>
+                        <option value="">Elige una opción</option>
+                        <option value="email">Duda</option>
+                        <option value="teléfono">Empleo</option>
+                        <option value="whatsapp">Quiero ser Guest</option>
+                        </select>
+                    
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Envíanos tu consulta" required></textarea>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <center>
+            <a href="https://momday.club/" target="_blank">momdayclub.com</a> <br> <br>
+            <a href="https://www.instagram.com/momdayclub/" target="_blank">TATTOO STUDIO</a> <br> <br>
+    
+            <p class="autor">
+                <a href="https://m4g4li.github.io/MAGALIBERGANZA/" target="_blank">Copyright © 2025 Magali Berganza. All rights reserved.</a>
+            </p>
+        </center>
+    </footer>
+
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script src="animation.js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="form.js"></script>
+    
+</body>
+</html>
