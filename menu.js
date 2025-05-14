@@ -1,3 +1,18 @@
+let lastScrollY = window.scrollY;
+
+window.addEventListener('beforeunload', () => {
+  sessionStorage.setItem('scrollPosition', window.scrollY);
+});
+
+window.addEventListener('load', () => {
+  const savedScroll = sessionStorage.getItem('scrollPosition');
+  if (savedScroll) {
+    window.scrollTo(0, parseInt(savedScroll));
+    sessionStorage.removeItem('scrollPosition');
+  }
+});
+
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
